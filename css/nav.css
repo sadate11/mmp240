@@ -1,0 +1,126 @@
+/* ============================
+* NAVIGATION
+* Modified from: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/
+
+/* Hide Main Nav to start if they use javascript. Will use JS to show if appropriate
+.js class is added through Modernizr */
+.js #main_nav {
+  clear: both;
+  display: none;
+  /*hidden to start */
+}
+
+#main_nav ul {
+  list-style: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#main_nav li {
+  margin-bottom: 0;
+
+}
+
+#main_nav li a {
+  display: block;
+  color: #fff;
+  background-color: #333;
+  padding: 0.625em;
+  /* 10px in ems is 10/16 */
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+}
+
+#main_nav li a:hover {
+  color: #333;
+  background-color: #E0E0E0;
+}
+
+#main_nav li a:active {
+  color: #fff;
+  background-color: #ED4C67;
+}
+
+/* menu button */
+.menu {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  
+}
+
+.menu a {
+  padding: 0.5em 0.625em; /*10/16 */
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Muli", sans-serif;
+  font-weight: 600;
+
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #ED4C67;
+}
+
+/* ==========================
+*  Media Queries for Main Nav
+*  ========================== */
+
+/* these don't have to be separate. We did so for two reasons:
+1. Easy to copy and paste this into new design
+2. Depending on your site you may need separate break points for the nav. You may want to see what width is needed to fit your nav horizontally without breaking and use that as the breakpoint.
+It should also be noted that there is only one media query because this CSS moves the nav to the top where it can stay for all of the other sizes.
+*/
+
+/* 45em is about 720px depending on the base font-size */
+
+@media only screen and (min-width: 45em) {
+    /* hide the menu button */
+    .menu {
+        display: none;
+    }
+    #main_nav {
+        /* move main_nav to top of the screen */
+/*         position: absolute;
+        top: 0;
+        left: 0; */
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        /* should be the same as #main_nav li a background color above */
+        background-color: #333;
+    }
+    #main_nav li {
+        display: inline;
+        line-height: 1em;
+    }
+    #main_nav li a {
+        float: left;
+        padding: 0.9375em;
+        /* 10/16  and  15/16 */
+        border-bottom: none;
+    }
+    #main_nav li a.top {
+        display: none;
+    }
+
+
+/* The following will move the nav to the top of the screens */
+    #main_nav {  /* move main_nav to top of the screen */
+        /* position: absolute;
+        top: 0;
+        left: 0;  */
+    }
+
+    .container { /* move the rest of the page down accordingly. Need to add wrap element with .container class */
+        /* margin-top: 4em; */ /* adjust depending on the height of your nav */
+    }
+
+
+} /* end media query */
