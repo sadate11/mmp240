@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Lora|Muli:400,600,700,700i');
+@import 'articles';
+@import 'nav';
+
+html {
+  box-sizing: border-box;
+}
+
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+img,video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0;
+
+}
+
+.section-title {
+  font-family: "Muli", sans-serif;
+  color: #333;
+  font-style: 700px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: "Muli", sans-serif;
+  color: #333;
+  font-style: 700px;
+  font-size: 1.2rem;
+
+}
+
+h3 a {
+  text-decoration: none;
+  color: #fd5c63;
+}
+
+p {
+  font-family: "Muli", sans-serif;
+  color: #333;
+}
+
+
+
+#copyright {
+  color: #333;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+}
