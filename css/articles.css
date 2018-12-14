@@ -26,32 +26,38 @@ h1 {
 
 }
 
+
 h2 {
   font-family: "Muli", sans-serif;
-  color: #333;
-  font-style: 700px;
   font-size: 1.8rem;
-}
-
-h3 {
-  font-family: "Muli", sans-serif;
-  color: #333;
-  font-style: 700px;
-  font-size: 1.2rem;
-
-}
-
-h3 a {
-  text-decoration: none;
-  color: #fd5c63;
+  font-weight: 700;
+  text-align: center;
 }
 
 p {
   font-family: "Muli", sans-serif;
-  color: #333;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.8;
 }
 
 
+.article-text {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+#back-to-article {
+  text-align: center;
+  font-family: "Muli", sans-serif;
+
+}
+
+ a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fd5c63;
+}
 
 #copyright {
   color: #333;
