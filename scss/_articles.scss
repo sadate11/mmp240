@@ -28,7 +28,7 @@ h1 {
 }
 
 
-.article-title {
+.article_title {
   font-family: "Muli", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -36,16 +36,21 @@ h1 {
 }
 
 p {
-  font-family: "Muli", sans-serif;
+  font-family: "Lora";
   font-size: 1rem;
   font-weight: 200;
   line-height: 1.8;
 }
 
 
-.article-text {
+.article_text {
   margin-left: 4em;
   margin-right: 4em;
+}
+
+.story {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
 }
 
 #back-to-article {
