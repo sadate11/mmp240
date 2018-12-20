@@ -55,13 +55,29 @@ p {
 }
 
  a {
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
-  color: #fd5c63;
+  color: #f0932b;
 }
 
 #copyright {
   color: #333;
   font-family: "Muli", sans-serif;
   text-align: center;
+}
+
+/* Article grid */
+@supports (grid-area: auto) {
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+}
+
+@media (max-width: 600px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
 }

@@ -5,6 +5,7 @@
 @import 'nav';
 @import 'animate.min';
 @import 'normalized-reset';
+@import 'map';
 
 html {
   box-sizing: border-box;
@@ -48,7 +49,7 @@ h3 {
 
 h3 a {
   text-decoration: none;
-  color: #fd5c63;
+  color: #f0932b;
 }
 
 p {
@@ -56,15 +57,12 @@ p {
   color: #333;
 }
 
-figure {
-  margin: 0;
-}
 
 #logo {
   margin-left: .8rem;
   font-family: "Staatliches";
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #f0932b;
 }
 
@@ -136,7 +134,40 @@ figure {
     color: white;
     font-family: "Poppins";
     font-size: 5.6rem;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
 
+  }
+
+  span {
+    font-family: "Staatliches";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #f0932b;
+  }
+
+  .about-desc {
+    float: right;
+  }
+
+  #about_text {
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+
+  }
+
+  /* About grid */
+  @supports (grid-area: auto) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+
+}
+
+@media (max-width: 600px) {
+    .about {
+      grid-template-columns: 1fr;
+    }
   }
