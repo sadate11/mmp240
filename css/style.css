@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Lora|Muli:400,600,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Lora|Muli:400,600,700,700i");
 html { box-sizing: border-box; }
@@ -37,14 +38,14 @@ a { font-weight: 600; text-decoration: none; color: #fd5c63; }
 
 #main_nav li a:hover { color: #333; background-color: #E0E0E0; }
 
-#main_nav li a:active { color: #fff; background-color: #ED4C67; }
+#main_nav li a:active { color: #fff; background-color: #f0932b; }
 
 /* menu button */
 .menu { margin-top: 1em; margin-bottom: 1em; }
 
 .menu a { padding: 0.5em 0.625em; /*10/16 */ background-color: #333; border-radius: 5px; color: #fff; text-decoration: none; font-family: "Muli", sans-serif; font-weight: 600; }
 
-.menu a:hover { color: #fff; background-color: #ED4C67; }
+.menu a:hover { color: #fff; background-color: #f0932b; }
 
 /* ========================== Media Queries for Main Nav ========================== */
 /* these don't have to be separate. We did so for two reasons:
@@ -1888,7 +1889,7 @@ p { font-family: "Muli", sans-serif; color: #333; }
 
 figure { margin: 0; }
 
-#logo { margin-left: .8rem; }
+#logo { margin-left: .8rem; font-family: "Staatliches"; font-size: 1.4rem; font-weight: 600; color: #f0932b; }
 
 #copyright { color: #333; font-family: "Muli", sans-serif; text-align: center; }
 
@@ -1908,3 +1909,7 @@ figure { margin: 0; }
 .video-container video { position: absolute; z-index: 0; bottom: 0; }
 
 .video-container video.fillWidth { width: 100%; }
+
+.overlay { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+#subtitle { color: white; font-family: "Poppins"; font-size: 5.6rem; font-weight: 800; text-align: center; }

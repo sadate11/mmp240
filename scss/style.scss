@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Lora|Muli:400,600,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import 'articles';
 @import 'nav';
 @import 'animate.min';
@@ -61,6 +62,10 @@ figure {
 
 #logo {
   margin-left: .8rem;
+  font-family: "Staatliches";
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f0932b;
 }
 
 #copyright {
@@ -118,4 +123,20 @@ figure {
 
   .video-container video.fillWidth {
     width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #subtitle {
+    color: white;
+    font-family: "Poppins";
+    font-size: 5.6rem;
+    font-weight: 800;
+    text-align: center;
+
   }
