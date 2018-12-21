@@ -44,8 +44,7 @@ p {
 
 
 .article_text {
-  margin-left: 4em;
-  margin-right: 4em;
+  margin: auto;
 }
 
 .story {
@@ -79,7 +78,7 @@ p {
   grid-column-gap: 10px;
 }
 
-} // @suports end 
+} // @suports end
 
 @media (max-width: 600px) {
   .articles {

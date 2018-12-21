@@ -154,6 +154,9 @@ p {
   #about_text {
     font-family: "Lora", serif;
     font-size: 1.2rem;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
 
   }
 
@@ -175,11 +178,12 @@ p {
   @supports (grid-area: auto) {
   .about {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
   }
 
-}
+ }
+
 
 @media (max-width: 600px) {
     .about {

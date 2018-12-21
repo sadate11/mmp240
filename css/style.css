@@ -19,7 +19,7 @@ h1 { font-family: "Poppins", sans-serif; color: #333; margin: 0; }
 
 p { font-family: "Lora"; font-size: 1rem; font-weight: 200; line-height: 1.8; }
 
-.article_text { margin-left: 4em; margin-right: 4em; }
+.article_text { margin: auto; }
 
 .story { font-family: "Lora", serif; font-size: 1.2rem; }
 
@@ -1930,13 +1930,13 @@ span { font-family: "Staatliches"; font-size: 1.4rem; font-weight: 400; color: #
 
 .about-desc { float: right; }
 
-#about_text { font-family: "Lora", serif; font-size: 1.2rem; }
+#about_text { font-family: "Lora", serif; font-size: 1.2rem; text-align: center; margin-left: 4rem; margin-right: 4rem; }
 
 .article_thumbnail { margin-top: 0; color: #333; font-family: "Poppins"; font-weight: 700; text-transform: uppercase; }
 
 .credit { color: gray; margin: 0; }
 
 /* About grid */
-@supports (grid-area: auto) { .about { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 10px; } }
+@supports (grid-area: auto) { .about { display: grid; grid-template-columns: 1fr; grid-column-gap: 10px; } }
 
 @media (max-width: 600px) { .about { grid-template-columns: 1fr; } }
